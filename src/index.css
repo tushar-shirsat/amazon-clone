@@ -6,8 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html{
+  font-size: 62.5%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body{
+  color: #0F1111;
+  background-color: #eaeded;
+  position: absolute;
+  /* width: 100vw; */
+}
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

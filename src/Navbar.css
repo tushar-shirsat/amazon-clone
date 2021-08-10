@@ -1,0 +1,157 @@
+.navbar{
+    background-color: #131921;
+    height: 6rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+    height: 100%;
+    width: 15rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+.navbar__search-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.navbar_search-input:active .navbar__search-container{
+    border: 2px solid #f3a847;
+}
+
+.navbar_search-input{
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+}
+
+.navbar__search-btn-go{
+    width: 10%;
+    height: 4.4rem;
+    border: none;
+    background-color: #febd69;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar__search-btn-go:hover{
+    background-color: #f3a847;
+}
+
+.navbar__search-btn-go .MuiSvgIcon-root{
+    font-size: 2rem !important;
+}
+
+
+.navbar__left{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar__left div{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.navbar__left div:hover{
+    border: 1px solid #fff;
+}
+
+.Navbar__account > span , .Navbar__order > span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.Navbar__account > h2 , .Navbar__order > h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.cart-logo .MuiSvgIcon-root{
+    font-size: 4rem;
+}
+.cart-logo{
+    position: relative;
+}
+.cart-number{
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f3a847;
+    top: 0%;
+    right: 0%;
+    font-weight: bold;
+}
+
+@media (min-width: 515px) and (max-width: 861px){
+    .navbar__logo{
+        width: 10rem;
+    }
+    .navbar_search-input{
+        width: 80%;
+    }
+    .navbar__search-btn-go{
+        width: 20%;
+    }
+    .navbar__search-container{
+        width: 30%;
+    }
+    .Navbar__account > span , .Navbar__order > span{
+        font-size: 1.2em;
+    }
+    .Navbar__account > h2 , .Navbar__order > h2{
+        font-size: 1.4rem;
+    }
+    .cart-logo .MuiSvgIcon-root{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 514px){
+    .navbar__logo{
+        width: 5rem;
+    }
+    .navbar_search-input{
+        width: 75%;
+    }
+    .navbar__search-btn-go{
+        width: 25%;
+    }
+    .navbar__left div{
+        padding: 0.5rem;
+    }
+    .navbar_search-input{
+        padding: 0.5rem;
+    }
+    .navbar__search-btn-go{
+        height: 3.4rem;
+    }
+    .navbar{
+        padding: 1.5rem 0;
+    }
+    .Navbar__account > span , .Navbar__order > span{
+        font-size: 1em;
+    }
+    .Navbar__account > h2 , .Navbar__order > h2{
+        font-size: 1.2rem;
+    }
+}

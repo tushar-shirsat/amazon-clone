@@ -1,0 +1,91 @@
+.login{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.login__logo{
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    object-fit: contain;
+}
+.login__container{
+    width: 40rem;
+    margin: auto;
+}
+.login__main{
+    border: 1px solid #e7e7e7;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.login__main > h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.login__form-control{
+    margin-bottom: 1rem;
+}
+
+.login__form-control > label{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.login__form-control > input{
+    margin-top: 7px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.login__btn,.login__create-account-btn{
+    font-size: 1.6rem;
+    width: 100%;
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    outline: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.login__create-account{
+    margin-top: 3rem;
+    position: relative;
+    z-index: 999;
+}
+.login__create-account > h5{
+    font-size: 1.4rem;
+    text-align: center;
+    z-index: 999;
+    color: #767676;
+}
+.login__create-account::before{
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #e7e7e7;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    z-index: -1; 
+}
+
+.login__create-account-btn{
+    background-color: #e7e9ec;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    margin-top: 1rem;
+}
